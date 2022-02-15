@@ -20,7 +20,7 @@ const App = () => {
   // To make the search bar work (which is stretch) we'd need another state to hold the search term.
   const [ posts, setPosts ] = useState(dummyData);
   const [ searchTerm, setSearchTerm ] = useState(null);
-  console.log(posts);
+  // console.log(posts);
 
   const likePost = postId => {
     /*
@@ -44,7 +44,7 @@ const App = () => {
     <div className='App'>
       {/* Add SearchBar and Posts here to render them */}
       <SearchBar />
-      <Posts /> 
+      <Posts posts={posts} likePost={likePost} /> 
       {/* Check the implementation of each component, to see what props they require, if any! */}
     </div>
   );
