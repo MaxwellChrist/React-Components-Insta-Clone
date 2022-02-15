@@ -36,5 +36,6 @@ const App = () => {
     </div>
   );
 };
+console.log("this is a test");
 
 export default App;
